@@ -113,7 +113,7 @@ export default function Home() {
             <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.78rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#7B0000", marginBottom: "1rem" }}>Placements</p>
             <h2 style={{ fontFamily: "Palatino Linotype, Palatino, Georgia, serif", fontSize: "2.2rem", fontWeight: 400, lineHeight: 1.25, color: "#1A1A1A", marginBottom: "1rem" }}>Where our alumni work</h2>
             <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "1rem", color: "#4A4A4A", lineHeight: 1.85, maxWidth: 520, marginBottom: "4rem" }}>
-              Alumni work across investment banking, asset management, and alternative investments at some of the most respected firms in finance.
+              Our alumni work across investment banking, asset management, and alternative investments at some of the most respected firms in finance.
             </p>
           </FadeIn>
           <FadeIn delay={150}>
