@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garnet Fund — University of South Carolina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --garnet: #73000a;
+    --garnet-deep: #4a0006;
+    --garnet-light: #9a0010;
+    --garnet-mist: #f5e8ea;
+    --gold: #c49a22;
+    --gold-light: #e8c84a;
+    --cream: #faf8f4;
+    --ink: #0e0d0c;
+    --ink-60: rgba(14,13,12,0.6);
+    --ink-30: rgba(14,13,12,0.3);
+    --ink-10: rgba(14,13,12,0.08);
+    --white: #ffffff;
+    --rule: rgba(14,13,12,0.12);
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Syne', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 64px;
+    background: rgba(250,248,244,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .nav-logo-mark {
+    width: 32px;
+    height: 32px;
+    background: var(--garnet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.5px;
+  }
+
+  .nav-logo-text {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-60);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--garnet); }
+
+  .nav-cta {
+    background: var(--garnet) !important;
+    color: #fff !important;
+    padding: 8px 20px;
+    font-size: 11px !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  .nav-cta:hover { background: var(--garnet-deep) !important; color: #fff !important; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 80px 48px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--garnet);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--garnet);
+  }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 6vw, 88px);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -1px;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--garnet);
+  }
+
+  .hero-sub {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink-60);
+    line-height: 1.7;
+    max-width: 400px;
+    margin-bottom: 48px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .btn-primary {
+    background: var(--garnet);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    text-decoration: none;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--garnet-deep); }
+
+  .btn-ghost {
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink-30);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .btn-ghost:hover { color: var(--garnet); border-color: var(--garnet); }
+
+  .hero-right {
+    background: var(--garnet);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 64px;
+    overflow: hidden;
+  }
+
+  .hero-right::before {
+    content: 'G';
+    position: absolute;
+    top: -60px;
+    right: -40px;
+    font-family: var(--font-display);
+    font-size: 480px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .hero-stat {
+    background: var(--garnet);
+    padding: 32px 28px;
+  }
+
+  .hero-stat-num {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .hero-stat-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .hero-tagline {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+
+  /* ── SECTION BASE ── */
+  section {
+    padding: 100px 80px;
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--garnet);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--garnet);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 4vw, 58px);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+  }
+
+  .section-title em {
+    font-style: italic;
+    color: var(--garnet);
+  }
+
+  /* ── TICKER ── */
+  .ticker-bar {
+    background: var(--ink);
+    color: rgba(255,255,255,0.5);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+  }
+
+  .ticker-inner span {
+    margin: 0 48px;
+  }
+
+  .ticker-inner span.up { color: #4ade80; }
+  .ticker-inner span.down { color: #f87171; }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── APPROACH ── */
+  #approach {
+    background: var(--white);
+    padding: 100px 80px;
+  }
+
+  .approach-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 64px;
+    align-items: start;
+  }
+
+  .approach-left {}
+
+  .approach-intro {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  .approach-body {
+    font-size: 14px;
+    color: var(--ink-60);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+
+  .approach-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .pillar {
+    padding: 28px 0;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+    align-items: start;
+    cursor: default;
+    transition: background 0.2s;
+  }
+
+  .pillar:last-child { border-bottom: 1px solid var(--rule); }
+
+  .pillar-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--garnet);
+    padding-top: 3px;
+  }
+
+  .pillar-content h4 {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+
+  .pillar-content p {
+    font-size: 13px;
+    color: var(--ink-60);
+    line-height: 1.7;
+  }
+
+  /* strategy cards right side */
+  .strategy-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .strategy-card {
+    background: var(--garnet);
+    padding: 36px 40px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .strategy-card:nth-child(2) { background: var(--garnet-deep); }
+  .strategy-card:nth-child(3) { background: var(--ink); }
+
+  .strategy-card-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 12px;
+  }
+
+  .strategy-card-title {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+
+  .strategy-card-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  .strategy-card-icon {
+    position: absolute;
+    right: 32px;
+    bottom: 20px;
+    font-family: var(--font-display);
+    font-size: 80px;
+    color: rgba(255,255,255,0.05);
+    line-height: 1;
+    font-style: italic;
+    pointer-events: none;
+  }
+
+  /* ── DIVIDER ── */
+  .full-bleed-quote {
+    background: var(--garnet-deep);
+    padding: 80px 80px;
+    text-align: center;
+  }
+
+  .full-bleed-quote blockquote {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 52px);
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    line-height: 1.3;
+    max-width: 900px;
+    margin: 0 auto 24px;
+  }
+
+  .full-bleed-quote cite {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    font-style: normal;
+  }
+
+  /* ── TEAM ── */
+  #team {
+    padding: 100px 80px;
+  }
+
+  .team-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    margin-bottom: 64px;
+    align-items: end;
+  }
+
+  .team-intro {
+    font-size: 14px;
+    color: var(--ink-60);
+    line-height: 1.8;
+  }
+
+  .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-bottom: 2px;
+  }
+
+  .member-card {
+    background: var(--white);
+    padding: 28px 24px;
+    border: 1px solid var(--rule);
+    position: relative;
+    transition: border-color 0.2s;
+  }
+
+  .member-card:hover { border-color: var(--garnet); }
+
+  .member-initial {
+    width: 48px;
+    height: 48px;
+    background: var(--garnet-mist);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--garnet);
+    margin-bottom: 20px;
+  }
+
+  .member-name {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  .member-role {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--garnet);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .member-year {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ink-30);
+    letter-spacing: 0.06em;
+  }
+
+  .analysts-section {
+    margin-top: 48px;
+  }
+
+  .analysts-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .analysts-title {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .sector-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .sector-tab {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    padding: 5px 12px;
+    border: 1px solid var(--rule);
+    color: var(--ink-60);
+    cursor: pointer;
+    transition: all 0.15s;
+    background: transparent;
+    user-select: none;
+  }
+
+  .sector-tab:hover, .sector-tab.active {
+    background: var(--garnet);
+    border-color: var(--garnet);
+    color: #fff;
+  }
+
+  .analysts-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+  }
+
+  .analyst-card {
+    background: var(--white);
+    padding: 20px 18px;
+    border: 1px solid var(--rule);
+  }
+
+  .analyst-name {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+
+  .analyst-sector {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--ink-30);
+    letter-spacing: 0.06em;
+  }
+
+  .analyst-role-badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    background: var(--garnet-mist);
+    color: var(--garnet);
+    margin-top: 6px;
+  }
+
+  /* ── JOIN ── */
+  #join {
+    background: var(--ink);
+    padding: 100px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  #join .section-label { color: rgba(255,255,255,0.35); }
+  #join .section-label::before { background: rgba(255,255,255,0.35); }
+
+  #join .section-title { color: #fff; }
+
+  .join-body {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+
+  .join-cta {
+    background: #fff;
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 36px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+
+  .join-cta:hover { background: var(--garnet-mist); }
+
+  .join-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .join-step {
+    padding: 28px 32px;
+    border: 1px solid rgba(255,255,255,0.08);
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .join-step-num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--garnet);
+    line-height: 1;
+  }
+
+  .join-step h4 {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 6px;
+  }
+
+  .join-step p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.6;
+  }
+
+  /* ── DONATE ── */
+  #donate {
+    padding: 100px 80px;
+    background: var(--white);
+  }
+
+  .donate-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 64px;
+    align-items: start;
+  }
+
+  .donate-body {
+    font-size: 14px;
+    color: var(--ink-60);
+    line-height: 1.8;
+    margin-bottom: 32px;
+  }
+
+  .donate-milestone {
+    background: var(--garnet-mist);
+    border-left: 3px solid var(--garnet);
+    padding: 24px 28px;
+    margin-bottom: 32px;
+  }
+
+  .donate-milestone p {
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  .donate-milestone strong {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: var(--garnet);
+  }
+
+  .donate-btn {
+    background: var(--garnet);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 36px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+
+  .donate-btn:hover { background: var(--garnet-deep); }
+
+  .transparency-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .transparency-card {
+    background: var(--cream);
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    border: 1px solid var(--rule);
+  }
+
+  .tc-freq {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--garnet);
+    padding: 4px 10px;
+    min-width: 76px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .tc-body h4 {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .tc-body p {
+    font-size: 12px;
+    color: var(--ink-60);
+    line-height: 1.6;
+  }
+
+  /* ── CONTACT / FOOTER ── */
+  footer {
+    background: var(--garnet-deep);
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo-mark {
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .footer-logo-text {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .footer-sub {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+  }
+
+  .footer-col h5 {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-col ul a {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-col ul a:hover { color: #fff; }
+
+  .footer-col .contact-email {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 8px;
+    word-break: break-all;
+  }
+
+  .footer-bottom {
+    background: var(--garnet-deep);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-bottom p {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: rgba(255,255,255,0.2);
+    letter-spacing: 0.08em;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp 0.7s ease both; animation-delay: 0.1s; }
+  .hero-title { animation: fadeUp 0.7s ease both; animation-delay: 0.2s; }
+  .hero-sub { animation: fadeUp 0.7s ease both; animation-delay: 0.3s; }
+  .hero-actions { animation: fadeUp 0.7s ease both; animation-delay: 0.4s; }
+  .hero-stats { animation: fadeUp 0.7s ease both; animation-delay: 0.5s; }
+
+  /* ── SCROLL REVEAL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── MOBILE ── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    #hero { grid-template-columns: 1fr; }
+    .hero-left { padding: 48px 24px; }
+    .hero-right { min-height: 400px; }
+    section { padding: 64px 24px; }
+    #approach, #join, #donate, footer { padding: 64px 24px; }
+    .approach-grid, #join, .donate-layout, .team-header { grid-template-columns: 1fr; gap: 48px; }
+    .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+    .analysts-grid { grid-template-columns: repeat(2, 1fr); }
+    footer { grid-template-columns: 1fr; }
+    .footer-bottom { padding: 20px 24px; flex-direction: column; gap: 8px; }
+    .full-bleed-quote { padding: 60px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-mark">G</div>
+    <span class="nav-logo-text">Garnet Fund</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#join">Join</a></li>
+    <li><a href="#donate">Invest</a></li>
+    <li><a href="#donate" class="nav-cta">Donate</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow">University of South Carolina &nbsp;·&nbsp; Moore School of Business</div>
+    <h1 class="hero-title">Where conviction<br><em>meets capital.</em></h1>
+    <p class="hero-sub">Garnet Fund is a 100% student-run long/short equity fund at USC. We manage real capital, develop serious analysts, and invest with discipline — not simulation.</p>
+    <div class="hero-actions">
+      <a href="#join" class="btn-primary">Join the Fund</a>
+      <a href="#approach" class="btn-ghost">Our Approach</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <p class="hero-tagline">"Idea-driven,<br>independent, rigorous."</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">L/S</div>
+        <div class="hero-stat-label">Equity Strategy</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">35+</div>
+        <div class="hero-stat-label">Active Members</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">8</div>
+        <div class="hero-stat-label">Sectors Covered</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">USC</div>
+        <div class="hero-stat-label">Columbia, SC</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-bar">
+  <div class="ticker-inner">
+    <span>CONSUMER &nbsp;·&nbsp;</span>
+    <span class="up">INDUSTRIALS ▲</span>
+    <span>&nbsp;·&nbsp; TMT &nbsp;·&nbsp;</span>
+    <span class="down">ENERGY ▼</span>
+    <span>&nbsp;·&nbsp; HEALTHCARE &nbsp;·&nbsp;</span>
+    <span class="up">FINANCIALS ▲</span>
+    <span>&nbsp;·&nbsp; CREDIT &nbsp;·&nbsp;</span>
+    <span class="up">COMMODITIES ▲</span>
+    <span>&nbsp;·&nbsp; DERIVATIVES &nbsp;·&nbsp;</span>
+    <span>CONSUMER &nbsp;·&nbsp;</span>
+    <span class="up">INDUSTRIALS ▲</span>
+    <span>&nbsp;·&nbsp; TMT &nbsp;·&nbsp;</span>
+    <span class="down">ENERGY ▼</span>
+    <span>&nbsp;·&nbsp; HEALTHCARE &nbsp;·&nbsp;</span>
+    <span class="up">FINANCIALS ▲</span>
+    <span>&nbsp;·&nbsp; CREDIT &nbsp;·&nbsp;</span>
+    <span class="up">COMMODITIES ▲</span>
+    <span>&nbsp;·&nbsp; DERIVATIVES &nbsp;·&nbsp;</span>
+  </div>
+</div>
+
+<!-- APPROACH -->
+<section id="approach">
+  <div class="section-label reveal">Investment Philosophy</div>
+  <div class="approach-grid">
+    <div class="approach-left">
+      <h2 class="section-title reveal">How we<br><em>think about markets.</em></h2>
+      <p class="approach-intro reveal">Garnet Fund runs a long/short equity portfolio. Every position is the result of independent research, structured review, and genuine conviction.</p>
+      <p class="approach-body reveal">We operate with a conservative, near-market-neutral philosophy — generating returns through stock-specific insight rather than broad market exposure. Risk management is not an afterthought; it is central to every decision we make. New members complete a hands-on training program in financial modeling, valuation, and investment analysis before contributing to the live portfolio.</p>
+
+      <div class="approach-pillars">
+        <div class="pillar reveal">
+          <span class="pillar-num">01</span>
+          <div class="pillar-content">
+            <h4>Valuation Mastery</h4>
+            <p>DCF, comparable company analysis, and precedent transactions. Members develop deep expertise in financial statement analysis and modeling.</p>
+          </div>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-num">02</span>
+          <div class="pillar-content">
+            <h4>In-Depth Research</h4>
+            <p>Comprehensive equity research across sectors. Analysts identify opportunities through fundamental research and competitive positioning.</p>
+          </div>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-num">03</span>
+          <div class="pillar-content">
+            <h4>Market Dynamics</h4>
+            <p>Macroeconomic trends, monetary policy, and sector rotations — building a comprehensive view of conditions and opportunities.</p>
+          </div>
+        </div>
+        <div class="pillar reveal">
+          <span class="pillar-num">04</span>
+          <div class="pillar-content">
+            <h4>Risk Management</h4>
+            <p>Portfolio construction, position sizing, and risk-adjusted return analysis to optimize performance at the fund level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="approach-right">
+      <div class="strategy-cards">
+        <div class="strategy-card reveal">
+          <div class="strategy-card-label">Core Strategy</div>
+          <div class="strategy-card-title">Long / Short Equity</div>
+          <div class="strategy-card-desc">We take positions on both sides of the market. Members develop conviction and understand how individual securities behave relative to the broader market.</div>
+          <div class="strategy-card-icon">↑</div>
+        </div>
+        <div class="strategy-card reveal">
+          <div class="strategy-card-label">Discipline</div>
+          <div class="strategy-card-title">Capital Preservation First</div>
+          <div class="strategy-card-desc">Near-market-neutral philosophy. Returns come from stock-specific insight, not passive market exposure. Risk management governs every entry and exit.</div>
+          <div class="strategy-card-icon">◈</div>
+        </div>
+        <div class="strategy-card reveal">
+          <div class="strategy-card-label">Process</div>
+          <div class="strategy-card-title">Idea-Driven &amp; Independent</div>
+          <div class="strategy-card-desc">Investment ideas originate with the analysts who cover each name. Positions go through structured review before entering the portfolio. Analysts defend their views.</div>
+          <div class="strategy-card-icon">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<div class="full-bleed-quote">
+  <blockquote class="reveal">"Learn by doing — not by watching."</blockquote>
+  <cite class="reveal">The Garnet Fund ethos &nbsp;·&nbsp; Darla Moore School of Business</cite>
+</div>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header">
+    <div>
+      <div class="section-label reveal">The Team</div>
+      <h2 class="section-title reveal">Built by students.<br><em>Run by analysts.</em></h2>
+    </div>
+    <p class="team-intro reveal">Every member of Garnet Fund covers real sectors, pitches live ideas, and defends their positions before the group. Our team spans eight investment verticals across equities, credit, derivatives, and commodities.</p>
+  </div>
+
+  <!-- Leadership -->
+  <div class="section-label reveal" style="margin-bottom: 20px;">Leadership</div>
+  <div class="leadership-grid reveal">
+    <div class="member-card">
+      <div class="member-initial">IA</div>
+      <div class="member-name">Ibrahim Alimohamed</div>
+      <div class="member-role">President</div>
+      <div class="member-year">Class of 2026</div>
+    </div>
+    <div class="member-card">
+      <div class="member-initial">CF</div>
+      <div class="member-name">Cameron Fischer</div>
+      <div class="member-role">Equities Portfolio Manager</div>
+      <div class="member-year">Class of 2027</div>
+    </div>
+    <div class="member-card">
+      <div class="member-initial">AW</div>
+      <div class="member-name">Anthony Watson</div>
+      <div class="member-role">Alternatives PM & Sr. Analyst</div>
+      <div class="member-year">Class of 2027</div>
+    </div>
+    <div class="member-card">
+      <div class="member-initial">CM</div>
+      <div class="member-name">Chase McShane</div>
+      <div class="member-role">Risk Manager</div>
+      <div class="member-year">Class of 2027</div>
+    </div>
+    <div class="member-card">
+      <div class="member-initial">AP</div>
+      <div class="member-name">Arav Patel</div>
+      <div class="member-role">Head of Operations</div>
+      <div class="member-year">Class of 2027</div>
+    </div>
+    <div class="member-card">
+      <div class="member-initial">AG</div>
+      <div class="member-name">Anish Ghana</div>
+      <div class="member-role">Head of Data Governance</div>
+      <div class="member-year">Class of 2027</div>
+    </div>
+  </div>
+
+  <!-- Analysts -->
+  <div class="analysts-section">
+    <div class="analysts-header reveal">
+      <span class="analysts-title">Investment Analysts</span>
+      <div class="sector-tabs" id="sectorTabs">
+        <button class="sector-tab active" data-sector="all">All</button>
+        <button class="sector-tab" data-sector="Consumer">Consumer</button>
+        <button class="sector-tab" data-sector="Industrials">Industrials</button>
+        <button class="sector-tab" data-sector="TMT">TMT</button>
+        <button class="sector-tab" data-sector="Financial">Financial</button>
+        <button class="sector-tab" data-sector="Healthcare">Healthcare</button>
+        <button class="sector-tab" data-sector="Energy">Energy</button>
+        <button class="sector-tab" data-sector="Credit">Credit</button>
+        <button class="sector-tab" data-sector="Currencies">Currencies</button>
+        <button class="sector-tab" data-sector="Derivatives">Derivatives</button>
+      </div>
+    </div>
+    <div class="analysts-grid" id="analystGrid">
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section id="join">
+  <div>
+    <div class="section-label">Recruitment</div>
+    <h2 class="section-title reveal">Ready to do the<br><em>real work?</em></h2>
+    <p class="join-body reveal">Applications for Fall 2026 open soon. We recruit students of all majors who demonstrate analytical curiosity, intellectual rigor, and a genuine interest in markets. Prior finance experience is welcome but not required — we train from the ground up.</p>
+    <a href="mailto:garnetinvestmentfund@gmail.com" class="join-cta">Get Notified</a>
+  </div>
+  <div class="join-right reveal">
+    <div class="join-step">
+      <div class="join-step-num">1</div>
+      <div>
+        <h4>Application</h4>
+        <p>Submit a written application demonstrating your analytical thinking and interest in markets. No prior finance experience required.</p>
+      </div>
+    </div>
+    <div class="join-step">
+      <div class="join-step-num">2</div>
+      <div>
+        <h4>Training Program</h4>
+        <p>Complete a structured curriculum in financial modeling, DCF valuation, comparable analysis, and investment thesis construction.</p>
+      </div>
+    </div>
+    <div class="join-step">
+      <div class="join-step-num">3</div>
+      <div>
+        <h4>Sector Assignment</h4>
+        <p>Join a sector team, begin building coverage on real companies, and pitch investment ideas to the full team for live portfolio consideration.</p>
+      </div>
+    </div>
+    <div class="join-step">
+      <div class="join-step-num">4</div>
+      <div>
+        <h4>Live Portfolio</h4>
+        <p>Your research drives real decisions. Defend positions, manage risk, and track performance against your own theses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate">
+  <div class="section-label reveal">For Investors & Donors</div>
+  <div class="donate-layout">
+    <div>
+      <h2 class="section-title reveal">Support the next<br><em>generation of investors.</em></h2>
+      <p class="donate-body reveal">Garnet Fund is entirely student-run. Donor capital is what makes it possible for students to manage a real portfolio and gain genuine investment experience — not a simulation. Donations through USC are tax-deductible.</p>
+
+      <div class="donate-milestone reveal">
+        <strong>$1M AUM Milestone</strong>
+        <p>Once the fund reaches $1 million in AUM, up to 4% may be disbursed annually — funding scholarships, paid training resources, and educational experiences for Moore School students.</p>
+      </div>
+
+      <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" class="donate-btn">Donate via Give 4 Garnet →</a>
+      <p style="font-family: var(--font-mono); font-size: 10px; color: var(--ink-30); margin-top: 16px; letter-spacing: 0.06em;">Select "Darla Moore School of Business" → "Garnet Fund"</p>
+    </div>
+
+    <div class="transparency-cards reveal">
+      <div style="margin-bottom: 20px;">
+        <div class="section-label" style="margin-bottom: 8px;">Investor Transparency</div>
+        <p style="font-size: 13px; color: var(--ink-60); line-height: 1.7;">All donors receive structured reporting to track the fund's performance and activity.</p>
+      </div>
+      <div class="transparency-card">
+        <div class="tc-freq">Monthly</div>
+        <div class="tc-body">
+          <h4>Investor Letter</h4>
+          <p>Performance updates and portfolio commentary sent to all donors. Holdings commentary and portfolio positioning included.</p>
+        </div>
+      </div>
+      <div class="transparency-card">
+        <div class="tc-freq">Annual</div>
+        <div class="tc-body">
+          <h4>Year-End Report</h4>
+          <p>A comprehensive summary of the fund's year, including member outcomes, placement results, and full performance attribution.</p>
+        </div>
+      </div>
+      <div class="transparency-card">
+        <div class="tc-freq">Semiannual</div>
+        <div class="tc-body">
+          <h4>Advisory Meeting</h4>
+          <p>Leadership meets with advisors and donors to review performance, discuss strategy, and plan for the semester ahead.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="footer-logo">
+      <div class="footer-logo-mark">G</div>
+      <span class="footer-logo-text">Garnet Fund</span>
+    </div>
+    <p class="footer-sub">University of South Carolina<br>Darla Moore School of Business<br>Columbia, SC · Est. 2024<br><br>A 100% student-run investment fund<br>dedicated to real-world financial<br>education and community good.</p>
+  </div>
+
+  <div class="footer-col">
+    <h5>Navigate</h5>
+    <ul>
+      <li><a href="#approach">Investment Approach</a></li>
+      <li><a href="#team">The Team</a></li>
+      <li><a href="#join">Join the Fund</a></li>
+      <li><a href="#donate">Donate / Invest</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-col">
+    <h5>Contact</h5>
+    <p class="contact-email">garnetinvestmentfund@gmail.com</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://garnetgate.sa.sc.edu/organization/thefund" target="_blank">Garnet Gate</a></li>
+      <li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet Portal</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2026 Garnet Fund · University of South Carolina</p>
+  <p>Not affiliated with any registered investment adviser · Educational purposes only</p>
+</div>
+
+<script>
+  // ── Analyst data ──
+  const analysts = [
+    { name: "Darya Tchavdarova", role: "Senior Analyst", sector: "Consumer", year: "2028" },
+    { name: "Ryan Conniff", role: "Analyst", sector: "Consumer", year: "2028" },
+    { name: "Will McCoy", role: "Analyst", sector: "Consumer", year: "2029" },
+    { name: "William Seigler", role: "Senior Analyst", sector: "Industrials", year: "2028" },
+    { name: "Ryan Ayers", role: "Analyst", sector: "Industrials", year: "2027" },
+    { name: "Jonnie Williams", role: "Analyst", sector: "Industrials", year: "2026" },
+    { name: "Sean Conroy", role: "Analyst", sector: "Industrials", year: "2028" },
+    { name: "John Krokondelas", role: "Analyst", sector: "Industrials", year: "2029" },
+    { name: "Nick Holjak", role: "Senior Analyst", sector: "TMT", year: "2027" },
+    { name: "Cooper Johnston", role: "Analyst", sector: "TMT", year: "2027" },
+    { name: "Sahil Agarwal", role: "Analyst", sector: "TMT", year: "2028" },
+    { name: "Thomas Patterson", role: "Analyst", sector: "TMT", year: "2028" },
+    { name: "Valentin di Stefano", role: "Senior Analyst", sector: "Financial", year: "2028" },
+    { name: "Sven Nielsen", role: "Analyst", sector: "Financial", year: "2028" },
+    { name: "John Gardner", role: "Analyst", sector: "Financial", year: "2029" },
+    { name: "Arnav Goel", role: "Analyst", sector: "Financial", year: "2028" },
+    { name: "Jacob Kaliberda", role: "Senior Analyst", sector: "Healthcare", year: "2027" },
+    { name: "Ethan Brodman", role: "Analyst", sector: "Healthcare", year: "2028" },
+    { name: "Julia Judkins", role: "Analyst", sector: "Healthcare", year: "2028" },
+    { name: "Michael Luca", role: "Analyst", sector: "Healthcare", year: "2028" },
+    { name: "Frederic Smith", role: "Analyst", sector: "Healthcare", year: "2029" },
+    { name: "Allison Eschenbach", role: "Senior Analyst", sector: "Energy", year: "2026" },
+    { name: "Liam Gayduk", role: "Analyst", sector: "Energy", year: "2026" },
+    { name: "Jackson Davis", role: "Analyst", sector: "Energy", year: "2028" },
+    { name: "Jack Kwait", role: "Analyst", sector: "Energy", year: "2029" },
+    { name: "Camden Smith", role: "Senior Analyst", sector: "Credit", year: "2026" },
+    { name: "Dalton Kahl", role: "Analyst", sector: "Credit", year: "2027" },
+    { name: "Luke Ribar", role: "Analyst", sector: "Credit", year: "2027" },
+    { name: "Thibault Hangyas", role: "Analyst", sector: "Credit", year: "2028" },
+    { name: "Nicolas Gauvin", role: "Senior Analyst", sector: "Currencies", year: "2027" },
+    { name: "Josh Shannon", role: "Analyst", sector: "Currencies", year: "2027" },
+    { name: "Beau Porter", role: "Analyst", sector: "Currencies", year: "2027" },
+    { name: "Sophia McCoy", role: "Analyst", sector: "Derivatives", year: "2028" },
+  ];
+
+  function getInitials(name) {
+    return name.split(' ').map(n => n[0]).slice(0, 2).join('');
+  }
+
+  function renderAnalysts(sector) {
+    const grid = document.getElementById('analystGrid');
+    const filtered = sector === 'all' ? analysts : analysts.filter(a => a.sector === sector);
+    grid.innerHTML = filtered.map(a => `
+      <div class="analyst-card">
+        <div class="analyst-name">${a.name}</div>
+        <div class="analyst-sector">${a.sector} · ${a.year}</div>
+        ${a.role === 'Senior Analyst' ? '<span class="analyst-role-badge">Sr. Analyst</span>' : ''}
+      </div>
+    `).join('');
+  }
+
+  renderAnalysts('all');
+
+  document.getElementById('sectorTabs').addEventListener('click', e => {
+    const tab = e.target.closest('.sector-tab');
+    if (!tab) return;
+    document.querySelectorAll('.sector-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderAnalysts(tab.dataset.sector);
+  });
+
+  // ── Scroll reveal ──
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
