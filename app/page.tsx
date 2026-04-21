@@ -259,7 +259,7 @@ export default function Home() {
 
       <nav>
         <a className="nl" onClick={() => (window as any).go('home')} style={{cursor:'pointer'}}>
-          <img src="/garnet-logo.png" alt="Garnet Fund" style={{height:'36px',width:'36px',objectFit:'contain',borderRadius:'2px'}} />
+          <img src="/logo-black.png" alt="Garnet Fund" style={{height:'36px',width:'auto',objectFit:'contain'}} />
           <span className="nl-t">Garnet Fund</span>
         </a>
         <ul className="nv">
@@ -281,26 +281,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tk">
-          <div className="tki">
-            <span>S&amp;P 500 <span className="up">▲ 0.42%</span></span>
-            <span>NASDAQ <span className="up">▲ 0.87%</span></span>
-            <span>DOW <span className="dn">▼ 0.11%</span></span>
-            <span>10Y UST <span className="up">4.38%</span></span>
-            <span>WTI CRUDE <span className="dn">▼ 1.2%</span></span>
-            <span>VIX <span className="up">18.4</span></span>
-            <span>USD/EUR <span className="dn">▼ 0.3%</span></span>
-            <span>GOLD <span className="up">▲ 0.6%</span></span>
-            <span>S&amp;P 500 <span className="up">▲ 0.42%</span></span>
-            <span>NASDAQ <span className="up">▲ 0.87%</span></span>
-            <span>DOW <span className="dn">▼ 0.11%</span></span>
-            <span>10Y UST <span className="up">4.38%</span></span>
-            <span>WTI CRUDE <span className="dn">▼ 1.2%</span></span>
-            <span>VIX <span className="up">18.4</span></span>
-            <span>USD/EUR <span className="dn">▼ 0.3%</span></span>
-            <span>GOLD <span className="up">▲ 0.6%</span></span>
-          </div>
-        </div>
+
 
         <div className="appsec" style={{borderBottom:'1px solid var(--rl)'}}>
           <div className="sl rv">Who We Are</div>
@@ -366,8 +347,19 @@ export default function Home() {
         <div className="appsec">
           <div className="sl rv">Alumni Placement</div>
           <div className="fgrid rv">
-            {['logo-morganstanley.png','logo-bofa.png','logo-wellsfargo.png','logo-deutschebank.png','logo-evercore.png','logo-lazard.png','logo-jefferies.png','logo-pipersandler.png','logo-point72.png','logo-raymondjames.png'].map((logo,i) => (
-              <div key={i} className="fc"><div className="firm-logo-wrap"><img src={`/${logo}`} alt={logo.replace('logo-','').replace('.png','')} /></div></div>
+            {[
+              {file:'logo-morganstanley.png',name:'Morgan Stanley'},
+              {file:'logo-bofa.png',name:'Bank of America'},
+              {file:'logo-wellsfargo.png',name:'Wells Fargo'},
+              {file:'logo-deutschebank.png',name:'Deutsche Bank'},
+              {file:'logo-evercore.png',name:'Evercore'},
+              {file:'logo-lazard.png',name:'Lazard'},
+              {file:'logo-jefferies.png',name:'Jefferies'},
+              {file:'logo-pipersandler.png',name:'Piper Sandler'},
+              {file:'logo-point72.png',name:'Point72'},
+              {file:'logo-raymondjames.png',name:'Raymond James'},
+            ].map((firm,i) => (
+              <div key={i} className="fc"><div className="firm-logo-wrap"><img src={`/${firm.file}`} alt={firm.name} /></div></div>
             ))}
           </div>
         </div>
