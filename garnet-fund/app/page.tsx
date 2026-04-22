@@ -153,11 +153,11 @@ export default function Home() {
         .jst h4{font-family:var(--fp);font-size:18px;font-weight:600;color:var(--ink);margin-bottom:8px}
         .jst p{font-family:var(--fp);font-size:13px;color:var(--i60);line-height:1.85}
         .alm{padding:80px;background:var(--cr)}
-        .fgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;margin-bottom:64px}
-        .fc{padding:20px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;border:1px solid var(--rl);background:var(--wh);transition:border-color .2s;text-align:center}
+        .fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px}
+        .fc{padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .2s;text-align:center}
         .fc:hover{border-color:var(--g)}
-        .firm-logo-wrap{width:100%;height:56px;display:flex;align-items:center;justify-content:center;overflow:hidden}
-        .firm-logo-wrap img{max-width:100%;max-height:56px;width:auto;height:auto;object-fit:contain}
+        .firm-logo-wrap{width:100%;height:100px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+        .firm-logo-wrap img{max-width:180px;max-height:100px;width:auto;height:auto;object-fit:contain}
         .pstats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
         .ps{padding:40px 32px}
         .ps:nth-child(1){background:var(--g)}
