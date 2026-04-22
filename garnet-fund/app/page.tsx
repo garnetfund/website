@@ -139,12 +139,12 @@ export default function Home() {
         .ht{font-family:var(--fp);font-size:clamp(48px,5.5vw,80px);font-weight:500;line-height:1.05;letter-spacing:-.5px;color:#fff;margin-bottom:32px;position:relative;z-index:1}
         .hs{font-family:var(--fp);font-size:15px;color:rgba(255,255,255,.75);line-height:1.85;max-width:480px;margin-bottom:48px;position:relative;z-index:1}
         .ha{display:flex;align-items:center;gap:20px;position:relative;z-index:1}
-        .tk{background:var(--ink);color:rgba(255,255,255,.5);font-family:var(--fm);font-size:11px;letter-spacing:.1em;padding:10px 0;overflow:hidden;white-space:nowrap}
-        .tki{display:inline-block;animation:tk 30s linear infinite}
-        .tki span{margin:0 48px}
-        .tki .up{color:#4ade80}
-        .tki .dn{color:#f87171}
-        @keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+        
+        
+        
+        
+        
+        to{transform:translateX(-50%)}}
         .appsec{background:var(--cr);padding:80px}
         .appbody{font-family:var(--fp);font-size:14px;color:var(--i60);line-height:1.9;margin-bottom:40px}
         .jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
@@ -281,25 +281,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="tk">
-          <div className="tki">
-            <span>S&amp;P 500 <span className="up">▲ 0.42%</span></span>
-            <span>NASDAQ <span className="up">▲ 0.87%</span></span>
-            <span>DOW <span className="dn">▼ 0.11%</span></span>
-            <span>10Y UST <span className="up">4.38%</span></span>
-            <span>WTI CRUDE <span className="dn">▼ 1.2%</span></span>
-            <span>VIX <span className="up">18.4</span></span>
-            <span>USD/EUR <span className="dn">▼ 0.3%</span></span>
-            <span>GOLD <span className="up">▲ 0.6%</span></span>
-            <span>S&amp;P 500 <span className="up">▲ 0.42%</span></span>
-            <span>NASDAQ <span className="up">▲ 0.87%</span></span>
-            <span>DOW <span className="dn">▼ 0.11%</span></span>
-            <span>10Y UST <span className="up">4.38%</span></span>
-            <span>WTI CRUDE <span className="dn">▼ 1.2%</span></span>
-            <span>VIX <span className="up">18.4</span></span>
-            <span>USD/EUR <span className="dn">▼ 0.3%</span></span>
-            <span>GOLD <span className="up">▲ 0.6%</span></span>
-          </div>
         </div>
 
         <div className="appsec" style={{borderBottom:'1px solid var(--rl)'}}>
@@ -465,3 +446,4 @@ export default function Home() {
     </>
   )
 }
+
