@@ -47,6 +47,7 @@ export default function Home() {
       {n:"Nicolas Gauvin",r:"Senior Analyst",s:"Currencies",y:"2027"},
       {n:"Josh Shannon",r:"Analyst",s:"Currencies",y:"2027"},
       {n:"Beau Porter",r:"Analyst",s:"Currencies",y:"2027"},
+  {n:"Anthony Watson",r:"Senior Analyst",s:"Derivatives",y:"2027"},
       {n:"Sophia McCoy",r:"Analyst",s:"Derivatives",y:"2028"},
     ]
 
