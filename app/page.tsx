@@ -259,7 +259,7 @@ export default function Home() {
 
       <nav>
         <a className="nl" onClick={() => (window as any).go('home')} style={{cursor:'pointer'}}>
-          <img src="/logo-black.png" alt="Garnet Fund" style={{height:'36px',width:'auto',objectFit:'contain'}} />
+          <img src="/garnet-logo.png" alt="Garnet Fund" style={{height:'36px',width:'auto',objectFit:'contain'}} />
           <span className="nl-t">Garnet Fund</span>
         </a>
         <ul className="nv">
@@ -284,7 +284,6 @@ export default function Home() {
 
 
         <div className="appsec" style={{borderBottom:'1px solid var(--rl)'}}>
-          <div className="sl rv">Who We Are</div>
           <div style={{maxWidth:'760px'}}>
             <h2 className="st rv">The Garnet Fund</h2>
             <p className="appbody rv">Garnet Fund is a student-managed investment fund at the Darla Moore School of Business. Founded in 2024, over 35 undergraduate students manage a real equity and alternatives portfolio each fall. This year we are starting with $110,000 under management, with a five-year goal of reaching $1 million in AUM. Our purpose is simple: give USC students hands-on experience with the skills that matter in finance.</p>
@@ -363,7 +362,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
       </div>
 
       {/* TEAM */}
