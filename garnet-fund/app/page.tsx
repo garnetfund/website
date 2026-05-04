@@ -347,7 +347,7 @@ export default function Home() {
         <div className="appsec">
           <div className="sl rv">Alumni Placement</div>
           <div className="fgrid rv">
-            {['logo-morganstanley.png','logo-bofa.png','logo-wellsfargo.png','logo-deutschebank.png','logo-evercore.png','logo-lazard.png','logo-jefferies.png','logo-pipersandler.png','logo-point72.png','logo-raymondjames.png'].map((logo,i) => (
+            {['logo-morganstanley.png','logo-bofa.png','logo-wellsfargo.png','logo-deutschebank.png','logo-evercore.png','logo-lazard.png','logo-jefferies.png','logo-pipersandler.png','logo-point72.png','logo-raymondjames.png','logo-jpmorgan.png','logo-santander.png','logo-truist.png','logo-lincolninternational.png'].map((logo,i) => (
               <div key={i} className="fc"><div className="firm-logo-wrap"><img src={`/${logo}`} alt={logo.replace('logo-','').replace('.png','')} /></div></div>
             ))}
           </div>
