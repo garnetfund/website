@@ -157,7 +157,7 @@ export default function Home() {
         .fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px}
         .fc{padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .2s;text-align:center}
         .fc:hover{border-color:var(--g)}
-        .firm-logo-wrap{width:100%;height:100px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+        .firm-logo-wrap{width:100%;height:160px;display:flex;align-items:center;justify-content:center;overflow:hidden}
         .firm-logo-wrap img{max-width:180px;max-height:100px;width:auto;height:auto;object-fit:contain}.firm-logo-wrap img[alt="truist"]{max-width:120px;max-height:60px}
         .pstats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
         .ps{padding:40px 32px}
