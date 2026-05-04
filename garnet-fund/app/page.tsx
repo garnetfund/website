@@ -276,7 +276,7 @@ export default function Home() {
         <div className="hero-full">
           <div className="hew">University of South Carolina &nbsp;·&nbsp; Moore School of Business</div>
           <h1 className="ht">Garnet Fund</h1>
-          <p className="hs">Garnet Fund is a student-run investment fund at the University of South Carolina. We manage real money, build real skills, and take investing seriously.</p>
+          <p className="hs">Garnet Fund is a student-run investment fund at the University of South Carolina.</p>
           <div className="ha">
             <button className="btnp" onClick={() => (window as any).go('join')}>Join the Fund</button>
           </div>
