@@ -146,14 +146,14 @@ export default function Home() {
         .tki .up{color:#4ade80}
         .tki .dn{color:#f87171}
         @keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-        .appsec{background:var(--cr);padding:80px}
+        .appsec{background:var(--cr);padding:48px}
         .appbody{font-family:var(--fp);font-size:14px;color:var(--i60);line-height:1.9;margin-bottom:40px}
         .jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
         .jst{padding:28px 32px;border:1px solid var(--rl);background:var(--wh);display:flex;flex-direction:column;gap:16px}
         .jsn{font-family:var(--fp);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g)}
         .jst h4{font-family:var(--fp);font-size:18px;font-weight:600;color:var(--ink);margin-bottom:8px}
         .jst p{font-family:var(--fp);font-size:13px;color:var(--i60);line-height:1.85}
-        .alm{padding:80px;background:var(--cr)}
+        .alm{padding:48px;background:var(--cr)}
         .fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:64px}
         .fc{padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .2s;text-align:center}
         .fc:hover{border-color:var(--g)}
@@ -166,7 +166,7 @@ export default function Home() {
         .ps:nth-child(3){background:var(--ink)}
         .psn{font-family:var(--fp);font-size:56px;font-weight:500;color:#fff;line-height:1;margin-bottom:8px}
         .psl{font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5)}
-        .tmp{padding:80px;background:var(--cr)}
+        .tmp{padding:48px;background:var(--cr)}
         .tmph{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:64px;align-items:end}
         .tmi{font-family:var(--fp);font-size:14px;color:var(--i60);line-height:1.9}
         .lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:48px}
@@ -191,7 +191,7 @@ export default function Home() {
         .an{font-family:var(--fs);font-size:13px;font-weight:600;color:var(--ink);margin-bottom:4px}
         .as{font-family:var(--fm);font-size:10px;color:var(--i30);letter-spacing:.06em}
         .ab{display:inline-block;font-family:var(--fm);font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;background:var(--gm);color:var(--g);margin-top:8px;border:1px solid rgba(115,0,10,.2)}
-        .jp{padding:80px;background:var(--cr)}
+        .jp{padding:48px;background:var(--cr)}
         .jhero{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-bottom:80px}
         .jb{font-family:var(--fp);font-size:14px;color:var(--i60);line-height:1.9;margin-bottom:32px}
         .jcta{background:var(--g);color:#fff;font-family:var(--fs);font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:14px 36px;text-decoration:none;display:inline-block}
@@ -211,7 +211,7 @@ export default function Home() {
         .apst{font-family:var(--fp);font-size:28px;font-weight:500;color:#fff;line-height:1.2;margin-bottom:12px}
         .apsd{font-family:var(--fp);font-size:13px;color:rgba(255,255,255,.6);line-height:1.85}
         .apsn{position:absolute;right:28px;bottom:16px;font-family:var(--fp);font-size:96px;font-weight:600;color:rgba(255,255,255,.05);line-height:1.2;pointer-events:none}
-        .dp{padding:80px;background:var(--cr)}
+        .dp{padding:48px;background:var(--cr)}
         .dl{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:64px;align-items:start}
         .db{font-family:var(--fp);font-size:14px;color:var(--i60);line-height:1.9;margin-bottom:32px}
         .dm{background:var(--gm);border-left:3px solid var(--g);padding:24px 28px;margin-bottom:32px}
