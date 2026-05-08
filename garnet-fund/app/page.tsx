@@ -398,7 +398,7 @@ export default function Home() {
           <div style={{maxWidth:'640px',marginBottom:'48px'}}>
             <div className="sl rv">Recruitment</div>
             <h2 className="st rv">Join the Garnet Fund</h2>
-            <p className="jb rv">Applications for Fall 2026 open soon. We recruit students from across USC who are serious about developing real investment skills.</p>
+            <p className="jb rv">Applications for Fall 2026 open soon.</p>
             <a href="mailto:garnetinvestmentfund@gmail.com" className="jcta rv">Apply Now</a>
           </div>
           <div className="aptitle rv">Application Process</div>
