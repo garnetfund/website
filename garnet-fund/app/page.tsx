@@ -409,6 +409,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+</div>
 
       {/* DONATE */}
       <div id="pg-donate" className="page">
