@@ -66,7 +66,7 @@ export default function Home() {
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ac-ph" style="display:none">${ini}</div>
           <div class="an">${a.n}</div>
-          <div class="as">${a.s} Â· ${a.y}</div>
+          <div class="as">${a.s} · ${a.y}</div>
           ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
         </div>`
       }).join('')
@@ -274,7 +274,7 @@ export default function Home() {
       {/* HOME */}
       <div id="pg-home" className="page active">
         <div className="hero-full">
-          <div className="hew">University of South Carolina &nbsp;Â·&nbsp; Moore School of Business</div>
+          <div className="hew">University of South Carolina &nbsp;·&nbsp; Moore School of Business</div>
           <h1 className="ht">Garnet Fund</h1>
           <p className="hs">Garnet Fund is a student-run investment fund at the University of South Carolina.</p>
           <div className="ha">
@@ -432,9 +432,9 @@ export default function Home() {
       </div>
 
       <div className="site-footer">
-        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;Â·&nbsp; Darla Moore School of Business<br/>Columbia, SC Â· Est. 2024</p></div>
+        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2024</p></div>
         <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Donate / Invest</button></li></ul></div>
         <div className="fc5"><h5>Contact</h5><p style={{fontFamily:'var(--fm)',fontSize:'11px',color:'rgba(255,255,255,.5)',marginBottom:'16px'}}>garnetinvestmentfund@gmail.com</p><ul><li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li><li><a href="https://garnetgate.sa.sc.edu/organization/thefund" target="_blank">Garnet Gate</a></li><li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet</a></li></ul></div>
       </div>
-      <div className="fb"><p>Â© 2026 Garnet Fund Â· University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
+      <div className="fb"><p>© 2026 Garnet Fund - University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
 }
