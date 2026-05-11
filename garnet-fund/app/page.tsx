@@ -429,14 +429,27 @@ export default function Home() {
             </div>
           </div>
         </div>
+      {/* DONATE */}
+      <div id="pg-donate" className="page">
+        <div className="dp" style={{paddingTop:'60px'}}>
+          <div className="sl rv">For Investors &amp; Donors</div>
+          <div className="dl">
+            <div>
+              <h2 className="st rv">Support the Garnet Fund</h2>
+              <p className="db rv">Garnet Fund is entirely student-run and operates with real capital. Donor support is what makes that possible. Every dollar goes toward giving Moore School students a genuine investment experience.</p>
+              <div className="dm rv"><strong>$1M AUM Milestone</strong><p>When the fund hits $1 million in AUM, we plan to put a portion of returns back into the school through scholarships and educational resources.</p></div>
+              <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" className="dbtn">Donate via Give 4 Garnet →</a>
+            </div>
+            <div className="tcards rv">
+              <div style={{marginBottom:'20px'}}><div className="sl" style={{marginBottom:'8px'}}>Investor Transparency</div><p style={{fontFamily:'var(--fp)',fontSize:'13px',color:'var(--i60)',lineHeight:1.85}}>All donors receive regular updates on fund performance and activity.</p></div>
+              <div className="tcard"><div className="tcf">Monthly</div><div className="tcb"><h4>Investor Letter</h4><p>Covers portfolio performance, current holdings, and any notable changes to positioning.</p></div></div>
+              <div className="tcard"><div className="tcf">Annual</div><div className="tcb"><h4>Year-End Report</h4><p>A full summary of the year covering fund performance, member outcomes, and placement results.</p></div></div>
+              <div className="tcard"><div className="tcf">Semiannual</div><div className="tcb"><h4>Advisory Meeting</h4><p>Held twice a year with fund leadership, faculty advisors, and donors.</p></div></div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="site-footer">
-        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2026</p></div>
-        <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Donate / Invest</button></li></ul></div>
-        <div className="fc5"><h5>Contact</h5><p style={{fontFamily:'var(--fm)',fontSize:'11px',color:'rgba(255,255,255,.5)',marginBottom:'16px'}}>garnetinvestmentfund@gmail.com</p><ul><li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li><li><a href="https://garnetgate.sa.sc.edu/organization/thefund" target="_blank">Garnet Gate</a></li><li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet</a></li></ul></div>
-      </div>
-    <div className="fb"><p>© 2026 Garnet Fund - University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
+      <div className="fb"><p>© 2026 Garnet Fund - University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
       </div>
     </>
   )
