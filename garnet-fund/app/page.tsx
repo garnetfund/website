@@ -429,6 +429,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </div>
       <div className="site-footer">
         <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2026</p></div>
         <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Donate / Invest</button></li></ul></div>
