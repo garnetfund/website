@@ -38,7 +38,18 @@
               For questions about membership or the application process, contact us directly.
             </p>
             <a href="mailto:garnetinvestmentfund@gmail.com" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>
-              garnetinvestmentfund@gmail.com</a><div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1.5rem" }}><div><p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Arav Patel - President</p><a href="mailto:arav@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>arav@email.sc.edu</a></div><div><p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Sophia McCoy - Head of Operations</p><a href="mailto:shmccoy@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>shmccoy@email.sc.edu</a></div></div><div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1.5rem" }}><div><p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Arav Patel — President</p><a href="mailto:arav@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>arav@email.sc.edu</a></div><div><p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Sophia McCoy — Head of Operations</p><a href="mailto:shmccoy@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>shmccoy@email.sc.edu</a></div></div>
+              garnetinvestmentfund@gmail.com
+            </a>
+            <div style={{ marginTop: "2rem", display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+              <div>
+                <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Arav Patel - President</p>
+                <a href="mailto:arav@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>arav@email.sc.edu</a>
+              </div>
+              <div>
+                <p style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.95rem", fontWeight: 600, color: "#1A1A1A", marginBottom: "0.25rem" }}>Sophia McCoy - Head of Operations</p>
+                <a href="mailto:shmccoy@email.sc.edu" style={{ fontFamily: "system-ui, sans-serif", fontSize: "0.9rem", color: "#7B0000", textDecoration: "none", borderBottom: "1px solid #7B0000", paddingBottom: "2px" }}>shmccoy@email.sc.edu</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
