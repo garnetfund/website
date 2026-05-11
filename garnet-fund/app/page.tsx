@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -66,7 +66,7 @@ export default function Home() {
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ac-ph" style="display:none">${ini}</div>
           <div class="an">${a.n}</div>
-          <div class="as">${a.s} · ${a.y}</div>
+          <div class="as">${a.s} Â· ${a.y}</div>
           ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
         </div>`
       }).join('')
@@ -274,7 +274,7 @@ export default function Home() {
       {/* HOME */}
       <div id="pg-home" className="page active">
         <div className="hero-full">
-          <div className="hew">University of South Carolina &nbsp;·&nbsp; Moore School of Business</div>
+          <div className="hew">University of South Carolina &nbsp;Â·&nbsp; Moore School of Business</div>
           <h1 className="ht">Garnet Fund</h1>
           <p className="hs">Garnet Fund is a student-run investment fund at the University of South Carolina.</p>
           <div className="ha">
@@ -405,7 +405,7 @@ export default function Home() {
           <div className="apsteps">
             <div className="aps rv"><div className="apsr">Round I</div><div className="apst">Resume &amp; Essay Screening</div><div className="apsd">Candidates submit a resume and a short essay demonstrating analytical thinking and genuine interest in financial markets.</div><div className="apsn">1</div></div>
             <div className="aps rv"><div className="apsr">Round II</div><div className="apst">Behavioral Interview</div><div className="apsd">Shortlisted candidates interview with current fund members. Interviewers assess communication skills and intellectual curiosity.</div><div className="apsn">2</div></div>
-            <div className="aps rv"><div className="apsr">Round III</div><div className="apst">Investment Case Study</div><div className="apsd">Finalists complete a take-home stock pitch and present it to the full investment team.</div><div className="apsn">3</div></div>
+            <div className="aps rv"><div className="apsr">Round III</div><div className="apst">Investment Case Study</div><div className="apsd">Finalists complete a take-home stock pitch and present it to the full investment team.</div><div className="apsn">3</div></div></div><div className="appsec" style={{borderTop:"1px solid var(--rl)",paddingTop:"48px"}}><div className="sl rv">Contact</div><div style={{marginTop:"0"}}><h2 className="st rv">Have questions?</h2><p style={{fontFamily:"var(--fp)",fontSize:"14px",color:"var(--i60)",lineHeight:"1.85",marginBottom:"2rem",marginTop:"16px"}}>Feel free to reach out to our team directly.</p><div style={{display:"flex",flexDirection:"column",gap:"1.25rem"}}><div><p style={{fontFamily:"var(--fs)",fontSize:"13px",fontWeight:600,color:"var(--ink)",marginBottom:"4px"}}>Arav Patel - President</p><a href="mailto:arav@email.sc.edu" style={{fontFamily:"var(--fs)",fontSize:"13px",color:"var(--g)",textDecoration:"none",borderBottom:"1px solid var(--g)",paddingBottom:"2px"}}>arav@email.sc.edu</a></div><div><p style={{fontFamily:"var(--fs)",fontSize:"13px",fontWeight:600,color:"var(--ink)",marginBottom:"4px"}}>Sophia McCoy - Head of Operations</p><a href="mailto:shmccoy@email.sc.edu" style={{fontFamily:"var(--fs)",fontSize:"13px",color:"var(--g)",textDecoration:"none",borderBottom:"1px solid var(--g)",paddingBottom:"2px"}}>shmccoy@email.sc.edu</a></div></div>
           </div>
         </div>
       </div>
@@ -419,7 +419,7 @@ export default function Home() {
               <h2 className="st rv">Support the Garnet Fund</h2>
               <p className="db rv">Garnet Fund is entirely student-run and operates with real capital. Donor support is what makes that possible. Every dollar goes toward giving Moore School students a genuine investment experience.</p>
               <div className="dm rv"><strong>$1M AUM Milestone</strong><p>When the fund hits $1 million in AUM, we plan to put a portion of returns back into the school through scholarships and educational resources.</p></div>
-              <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" className="dbtn">Donate via Give 4 Garnet →</a>
+              <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" className="dbtn">Donate via Give 4 Garnet â†’</a>
             </div>
             <div className="tcards rv">
               <div style={{marginBottom:'20px'}}><div className="sl" style={{marginBottom:'8px'}}>Investor Transparency</div><p style={{fontFamily:'var(--fp)',fontSize:'13px',color:'var(--i60)',lineHeight:1.85}}>All donors receive regular updates on fund performance and activity.</p></div>
@@ -432,11 +432,11 @@ export default function Home() {
       </div>
 
       <div className="site-footer">
-        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2024</p></div>
+        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;Â·&nbsp; Darla Moore School of Business<br/>Columbia, SC Â· Est. 2024</p></div>
         <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Donate / Invest</button></li></ul></div>
         <div className="fc5"><h5>Contact</h5><p style={{fontFamily:'var(--fm)',fontSize:'11px',color:'rgba(255,255,255,.5)',marginBottom:'16px'}}>garnetinvestmentfund@gmail.com</p><ul><li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li><li><a href="https://garnetgate.sa.sc.edu/organization/thefund" target="_blank">Garnet Gate</a></li><li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet</a></li></ul></div>
       </div>
-      <div className="fb"><p>© 2026 Garnet Fund · University of South Carolina</p><p>Not affiliated with any registered investment adviser · Educational purposes only</p></div>
+      <div className="fb"><p>Â© 2026 Garnet Fund Â· University of South Carolina</p><p>Not affiliated with any registered investment adviser Â· Educational purposes only</p></div>
     </>
   )
 }
