@@ -419,7 +419,7 @@ export default function Home() {
               <h2 className="st rv">Support the Garnet Fund</h2>
               <p className="db rv">Garnet Fund is entirely student-run and operates with real capital. Donor support is what makes that possible. Every dollar goes toward giving Moore School students a genuine investment experience.</p>
               <div className="dm rv"><strong>$1M AUM Milestone</strong><p>When the fund hits $1 million in AUM, we plan to put a portion of returns back into the school through scholarships and educational resources.</p></div>
-              <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" className="dbtn">Donate via Give 4 Garnet â†’</a>
+              <a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank" className="dbtn">Donate via Give 4 Garnet </a>
             </div>
             <div className="tcards rv">
               <div style={{marginBottom:'20px'}}><div className="sl" style={{marginBottom:'8px'}}>Investor Transparency</div><p style={{fontFamily:'var(--fp)',fontSize:'13px',color:'var(--i60)',lineHeight:1.85}}>All donors receive regular updates on fund performance and activity.</p></div>
