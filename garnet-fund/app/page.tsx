@@ -398,7 +398,7 @@ export default function Home() {
           <div style={{maxWidth:'640px',marginBottom:'48px'}}>
             <div className="sl rv">Recruitment</div>
             <h2 className="st rv">Join the Garnet Fund</h2>
-            <p className="jb rv">Applications for Fall 2026 open soon.</p>
+            <p className="jb rv">Applications for Fall 2026 are now open. The deadline to apply is September 10th.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWJe5YZ-LQQBsYgVk-Se21-_3k-0yQr1sAl_sTTr6lDOxljw/viewform?usp=publish-editor" target="_blank" className="jcta rv">Apply Now</a>
           </div>
           <div className="aptitle rv">Application Process</div>
