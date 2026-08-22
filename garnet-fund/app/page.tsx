@@ -365,7 +365,7 @@ export default function Home() {
               {slug:'anthony-watson',ini:'AW',name:'Anthony Watson',role:'Alternatives PM & Sr. Analyst',year:'2027'},
               {slug:'cooper-johnston',ini:'CJ',name:'Cooper Johnston',role:'Risk Manager',year:'2027'},
               {slug:'sophia-mccoy',ini:'SM',name:'Sophia McCoy',role:'Head of Operations',year:'2028'},
-              {slug:'anish-ghana',ini:'AG',name:'Anish Ghana',role:'Head of Data Governance',year:'2027'},
+              {slug:'preston-schlagheck',ini:'AG',name:'Preston Schlagheck',role:'Head of Data Governance',year:'2028'},
             ].map((m,i) => (
               <div key={i} className="mc">
                 <img src={`https://www.garnetfund.org/headshots/${m.slug}.jpg`} className="mphoto" alt={m.name} onError={(e)=>{(e.target as HTMLElement).style.display='none';(e.target as HTMLElement).nextElementSibling && ((e.target as HTMLElement).nextElementSibling as HTMLElement).style && ((e.target as HTMLElement).nextElementSibling as HTMLElement).style.setProperty('display','flex')}} />
