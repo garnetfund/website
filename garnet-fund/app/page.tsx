@@ -401,7 +401,7 @@ export default function Home() {
       </div>
 </div>
 
-      {/* DONATE */}
+      {/* ALUMNI */}
       <div id="pg-donate" className="page">
         <div className="dp" style={{paddingTop:'60px'}}>
           <div className="sl rv">For Investors &amp; Donors</div>
