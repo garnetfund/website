@@ -31,7 +31,7 @@ export default function Home() {
       {n:"Will McCoy",r:"Analyst",s:"Derivatives",y:"2029"},
       {n:"Valentin di Stefano",r:"Senior Analyst",s:"Financial",y:"2028"},
       {n:"Aiden Shilman",r:"Analyst",s:"Financial",y:"2027"},
-      {n:"John Krokondelas",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Jack Krokondelas",r:"Analyst",s:"Financial",y:"2029"},
       {n:"Pranav Murugesan",r:"Senior Analyst",s:"Healthcare",y:"2027"},
       {n:"Cameron Fischer",r:"Analyst",s:"Healthcare",y:"2027"},
       {n:"Jackson Davis",r:"Analyst",s:"Healthcare",y:"2028"},
