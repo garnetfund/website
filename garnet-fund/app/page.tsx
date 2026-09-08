@@ -372,7 +372,7 @@ export default function Home() {
             <div className="ahd rv">
               <span className="at">Investment Analysts</span>
               <div className="stabs" id="stabs">
-                {['all','Consumer','Industrials','TMT','Financial','Healthcare','Energy','Credit','Currencies','Derivatives'].map(s => (
+                {['all','Consumer','Industrials','TMT','Financial','Healthcare','Energy','Derivatives'].map(s => (
                   <button key={s} className={`stab${s==='all'?' active':''}`} data-s={s}>{s==='all'?'All':s}</button>
                 ))}
               </div>
