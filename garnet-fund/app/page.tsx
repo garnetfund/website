@@ -356,7 +356,7 @@ export default function Home() {
             {[
               {slug:'arav-patel',ini:'AP',name:'Arav Patel',role:'President',year:'2027'},
               {slug:'chase-mcshane',ini:'CM',name:'Chase McShane',role:'Equities Portfolio Manager',year:'2027'},
-              {slug:'anthony-watson',ini:'AW',name:'Anthony Watson',role:'Alternatives PM',year:'2027'},
+              {slug:'anthony-watson',ini:'AW',name:'Anthony Watson',role:'Alternatives Portfolio Manager',year:'2027'},
               {slug:'cooper-johnston',ini:'CJ',name:'Cooper Johnston',role:'Risk Manager',year:'2027'},
               {slug:'sophia-mccoy',ini:'SM',name:'Sophia McCoy',role:'Head of Operations',year:'2028'},
               {slug:'preston-schlagheck',ini:'AG',name:'Preston Schlagheck',role:'Head of Data Governance',year:'2028'},
