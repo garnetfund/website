@@ -257,7 +257,7 @@ export default function Home() {
           <li><button id="nb-home" onClick={() => (window as any).go('home')}>Home</button></li>
           <li><button id="nb-team" onClick={() => (window as any).go('team')}>Team</button></li>
           <li><button id="nb-join" onClick={() => (window as any).go('join')}>Join</button></li>
-          <li><button id="nb-donate" onClick={() => (window as any).go('donate')} className="ncta">Donate</button></li>
+          <li><button id="nb-donate" onClick={() => (window as any).go('donate')} className="ncta">Alumni</button></li>
         </ul>
       </nav>
 
