@@ -406,7 +406,7 @@ export default function Home() {
             <div>
               <h2 className="st rv">Support the Garnet Fund</h2>
               <p className="db rv">Garnet Fund is entirely student-run and operates with real capital. Donor support is what makes that possible. Every dollar goes toward giving Moore School students a genuine investment experience.</p>
-              <p>If you're interested in donating, press the "Donate via Give 4 Garnet" box, enter "Garnet Fund" in the "Search Funds" box, and fill out the rest of the information accordingly. Thank you for your donation!</p>
+              <p className="db rv">If you're interested in donating, press the "Donate via Give 4 Garnet" box, enter "Garnet Fund" in the "Search Funds" box, and fill out the rest of the information accordingly. Thank you for your donation!</p>
               <div className="dm rv"><strong>$1M AUM Milestone</strong><p>When the fund hits $1 million in AUM, we plan to put a portion of returns back into the school through scholarships and educational resources.</p></div>
               <a href="https://connect.sc.edu/direct-your-gift?appeal=4ab90ad2-8536-43af-a8d3-b78d1e88f4d3" target="_blank" className="dbtn">Donate via Give 4 Garnet</a>
             </div>
