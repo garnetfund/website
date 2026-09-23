@@ -419,8 +419,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        </div>
-<div className="site-footer">
+        <div className="site-footer">
   <div className="flg">
     <div className="flgm">
       <div className="sub">
@@ -445,3 +444,4 @@ export default function Home() {
     <p>© 2026 Garnet Fund - University of South Carolina</p>
     <p>Not affiliated with any registered investment adviser. Educational purposes only.</p>
   </div>
+</div>
