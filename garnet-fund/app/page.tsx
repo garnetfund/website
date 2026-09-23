@@ -420,22 +420,24 @@ export default function Home() {
           </div>
         </div>
         </div>
-      <div className="site-footer">
+<div className="site-footer">
   <div className="flg">
     <div className="flgm">
       <div className="sub">
-        <li>
-          <div className="fimg">
-            <img src="/garnet-fund-logo.png" alt="Garnet Fund Logo" style={{width: '50px', height: '50px'}} />
-          </div>
-          <p style={{fontFamily: 'Roboto'}}>USC Darla Moore</p>
-        </li>
-        <li>
-          <ul>
-            <li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Support Garnet Fund</a></li>
-            <li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li>
-          </ul>
-        </li>
+        <ul>
+          <li>
+            <div className="fimg">
+              <img src="/garnet-fund-logo.png" alt="Garnet Fund Logo" style={{width: '50px', height: '50px'}} />
+            </div>
+            <p style={{fontFamily: 'Roboto'}}>USC Darla Moore</p>
+          </li>
+          <li>
+            <ul>
+              <li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Support Garnet Fund</a></li>
+              <li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
