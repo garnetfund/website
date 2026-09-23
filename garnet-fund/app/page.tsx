@@ -445,4 +445,3 @@ export default function Home() {
     <p>© 2026 Garnet Fund - University of South Carolina</p>
     <p>Not affiliated with any registered investment adviser. Educational purposes only.</p>
   </div>
-</div>
