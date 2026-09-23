@@ -419,7 +419,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="site-footer">
+        </div>
+<<div className="site-footer">
   <div className="flg">
     <div className="flgm">
       <div className="sub">
