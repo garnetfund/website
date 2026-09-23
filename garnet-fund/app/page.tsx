@@ -421,11 +421,26 @@ export default function Home() {
         </div>
         </div>
       <div className="site-footer">
-        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2026</p></div>
-        <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Support Garnet Fund</button></li></ul></div>
-        <div className="fc5"><h5>Contact</h5><p style={{fontFamily:'var(--fm)',fontSize:'11px',color:'rgba(255,255,255,.5)',marginBottom:'16px'}}>garnetinvestmentfund@gmail.com</p><ul><li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li><li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Garnet Gate</a></li><li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet</a></li></ul></div>
+  <div className="flg">
+    <div className="flgm">
+      <div className="sub">
+        <li>
+          <div className="fimg">
+            <img src="/garnet-fund-logo.png" alt="Garnet Fund Logo" style={{width: '50px', height: '50px'}} />
+          </div>
+          <p style={{fontFamily: 'Roboto'}}>USC Darla Moore</p>
+        </li>
+        <li>
+          <ul>
+            <li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Support Garnet Fund</a></li>
+            <li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </li>
       </div>
-      <div className="fb"><p>© 2026 Garnet Fund - University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
-    </>
-  )
-}
+    </div>
+  </div>
+  <div className="fb">
+    <p>© 2026 Garnet Fund - University of South Carolina</p>
+    <p>Not affiliated with any registered investment adviser. Educational purposes only.</p>
+  </div>
+</div>
