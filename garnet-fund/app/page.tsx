@@ -15,25 +15,46 @@ export default function Home() {
 
     // Analyst data
     const analysts: {n:string,r:string,s:string,y:string}[] = [
-      {n:"William Seigler",r:"Senior Analyst",s:"Consumer",y:"2028"},
+      {n:"Ryan Conniff",r:"Senior Analyst",s:"Consumer",y:"2028"},
       {n:"Elise Dumpert",r:"Analyst",s:"Consumer",y:"2027"},
-      {n:"Ryan Conniff",r:"Analyst",s:"Consumer",y:"2028"},
+      {n:"Colin Fischer",r:"Analyst",s:"Consumer",y:"2029"},
+      {n:"Noah Robbins",r:"Analyst",s:"Consumer",y:"2030"},
+      {n:"William Siegler",r:"Analyst",s:"Consumer",y:"2028"},
+      {n:"Kate Sniffen",r:"Analyst",s:"Consumer",y:"2029"},
       {n:"Nick Holjak",r:"Senior Analyst",s:"TMT",y:"2027"},
-      {n:"Darya Tchavdarova",r:"Analyst",s:"TMT",y:"2028"},
+      {n:"Harrison Cevasco",r:"Analyst",s:"TMT",y:"2029"},
       {n:"Thomas Patterson",r:"Analyst",s:"TMT",y:"2028"},
+      {n:"Darya Tchavdarova",r:"Analyst",s:"TMT",y:"2028"},
+      {n:"Nick Wilson",r:"Analyst",s:"TMT",y:"2030"},
+      {n:"Annabelle Yip",r:"Analyst",s:"TMT",y:"2030"},
       {n:"John Gardner",r:"Senior Analyst",s:"Energy",y:"2029"},
+      {n:"Ryan Branham",r:"Analyst",s:"Energy",y:"2029"},
       {n:"Arnav Goel",r:"Analyst",s:"Energy",y:"2028"},
+      {n:"Julia Judkins",r:"Analyst",s:"Energy",y:"2028"},
       {n:"Jack Kwait",r:"Analyst",s:"Energy",y:"2029"},
+      {n:"Ace Poyah",r:"Analyst",s:"Energy",y:"2030"},
       {n:"Anthony Watson",r:"PM Alternatives",s:"Derivatives",y:"2027"},
-      {n:"Josh Shannon",r:"Analyst",s:"Derivatives",y:"2027"},
       {n:"Sahil Agarwal",r:"Analyst",s:"Derivatives",y:"2028"},
+      {n:"Ryan Fronczak",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"James Lambert",r:"Analyst",s:"Derivatives",y:"208"},
       {n:"Sophia McCoy",r:"Analyst",s:"Derivatives",y:"2028"},
       {n:"Will McCoy",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"James Rubleske",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"Josh Shannon",r:"Analyst",s:"Derivatives",y:"2027"},
       {n:"Valentin di Stefano",r:"Senior Analyst",s:"Financial",y:"2028"},
+      {n:"Gray Barnett",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Rishi Gorjala",r:"Analyst",s:"Financial",y:"2030"},
       {n:"Jack Krokondelas",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Cam Sanchez",r:"Analyst",s:"Financial",y:"2029"},
       {n:"Cameron Fischer",r:"Senior Analyst",s:"Healthcare",y:"2027"},
       {n:"Jackson Davis",r:"Analyst",s:"Healthcare",y:"2028"},
+      {n:"Hudson Garraux",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Shree Patadia",r:"Analyst",s:"Financial",y:"2030"},
+      {n:"Auggie Rivero",r:"Analyst",s:"Financial",y:"2029"},
       {n:"Michael Kilpatrick",r:"Senior Analyst",s:"Industrials",y:"2028"},
+      {n:"Daniel Campos Anzaldua",r:"Analyst",s:"Financial",y:"2028"},
+      {n:"Brit Dugan",r:"Analyst",s:"Financial",y:"2027"},
+      {n:"Michael Keenan",r:"Analyst",s:"Financial",y:"2029"},
       {n:"Jack Matthews",r:"Analyst",s:"Industrials",y:"2028"},
       {n:"Sven Nielsen",r:"Analyst",s:"Industrials",y:"2028"},
     ]
@@ -420,29 +441,12 @@ export default function Home() {
           </div>
         </div>
         </div>
-<div className="site-footer">
-  <div className="flg">
-    <div className="flgm">
-      <div className="sub">
-        <ul>
-          <li>
-            <div className="fimg">
-              <img src="/garnet-fund-logo.png" alt="Garnet Fund Logo" style={{width: '50px', height: '50px'}} />
-            </div>
-            <p style={{fontFamily: 'Roboto'}}>USC Darla Moore</p>
-          </li>
-          <li>
-            <ul>
-              <li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Support Garnet Fund</a></li>
-              <li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li>
-            </ul>
-          </li>
-        </ul>
+      <div className="site-footer">
+        <div><div className="flg"><div className="flgm">G</div><span className="flgt">Garnet Fund</span></div><p className="fsub">University of South Carolina &nbsp;·&nbsp; Darla Moore School of Business<br/>Columbia, SC · Est. 2026</p></div>
+        <div className="fc5"><h5>Navigate</h5><ul><li><button onClick={() => (window as any).go('team')}>The Team</button></li><li><button onClick={() => (window as any).go('join')}>Join the Fund</button></li><li><button onClick={() => (window as any).go('donate')}>Support Garnet Fund</button></li></ul></div>
+        <div className="fc5"><h5>Contact</h5><p style={{fontFamily:'var(--fm)',fontSize:'11px',color:'rgba(255,255,255,.5)',marginBottom:'16px'}}>garnetinvestmentfund@gmail.com</p><ul><li><a href="https://www.linkedin.com/company/garnet-fund/" target="_blank">LinkedIn</a></li><li><a href="https://garnetgate.sa.sc.edu/organization/garnetfund" target="_blank">Garnet Gate</a></li><li><a href="https://give4garnet.sc.edu/giving-day/104390/donate" target="_blank">Give 4 Garnet</a></li></ul></div>
       </div>
-    </div>
-  </div>
-  <div className="fb">
-    <p>© 2026 Garnet Fund - University of South Carolina</p>
-    <p>Not affiliated with any registered investment adviser. Educational purposes only.</p>
-  </div>
-</div>
+      <div className="fb"><p>© 2026 Garnet Fund - University of South Carolina</p><p>Not affiliated with any registered investment adviser. Educational purposes only.</p></div>
+    </>
+  )
+}
