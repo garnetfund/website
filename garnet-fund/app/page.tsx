@@ -15,69 +15,68 @@ export default function Home() {
 
     // Analyst data
     const analysts: {n:string,r:string,s:string,y:string}[] = [
-  {n:"Ryan conniff",r:"Senior Analyst",s:"Consumer",y:"2028"},
-  {n:"Elise dumpert",r:"Analyst",s:"Consumer",y:"2027"},
-  {n:"Colin fischer",r:"Analyst",s:"Consumer",y:"2029"},
-  {n:"Noah robbins",r:"Analyst",s:"Consumer",y:"2030"},
-  {n:"William siegler",r:"Analyst",s:"Consumer",y:"2028"},
-  {n:"Kate sniffen",r:"Analyst",s:"Consumer",y:"2029"},
-  {n:"Nick holjak",r:"Senior Analyst",s:"TMT",y:"2027"},
-  {n:"Harrison cevasco",r:"Analyst",s:"TMT",y:"2029"},
-  {n:"Thomas patterson",r:"Analyst",s:"TMT",y:"2028"},
-  {n:"Darya tchavdarova",r:"Analyst",s:"TMT",y:"2028"},
-  {n:"Nick wilson",r:"Analyst",s:"TMT",y:"2030"},
-  {n:"Annabelle yip",r:"Analyst",s:"TMT",y:"2030"},
-  {n:"John gardner",r:"Senior Analyst",s:"Energy",y:"2029"},
-  {n:"Ryan branham",r:"Analyst",s:"Energy",y:"2029"},
-  {n:"Julia judkins",r:"Analyst",s:"Energy",y:"2028"},
-  {n:"Jack kwait",r:"Analyst",s:"Energy",y:"2029"},
-  {n:"Ace poyah",r:"Analyst",s:"Energy",y:"2030"},
-  {n:"Anthony watson",r:"PM Alternatives",s:"Derivatives",y:"2027"},
-  {n:"Sahil agarwal",r:"Analyst",s:"Derivatives",y:"2028"},
-  {n:"Ryan fronczak",r:"Analyst",s:"Derivatives",y:"2029"},
-  {n:"James lambert",r:"Analyst",s:"Derivatives",y:"208"},
-  {n:"Sophia mccoy",r:"Analyst",s:"Derivatives",y:"2028"},
-  {n:"Will mccoy",r:"Analyst",s:"Derivatives",y:"2029"},
-  {n:"James rubleske",r:"Analyst",s:"Derivatives",y:"2029"},
-  {n:"Josh shannon",r:"Analyst",s:"Derivatives",y:"2027"},
-  {n:"Valentin di stefano",r:"Senior Analyst",s:"Financial",y:"2028"},
-  {n:"Gray barnett",r:"Analyst",s:"Financial",y:"2029"},
-  {n:"Rishi gorjala",r:"Analyst",s:"Financial",y:"2030"},
-  {n:"Jack krokondelas",r:"Analyst",s:"Financial",y:"2029"},
-  {n:"Hudson garraux",r:"Analyst",s:"Financial",y:"2029"},
-  {n:"Shree patadia",r:"Analyst",s:"Financial",y:"2030"},
-  {n:"Cameron fischer",r:"Senior Analyst",s:"Healthcare",y:"2027"},
-  {n:"Jackson davis",r:"Analyst",s:"Healthcare",y:"2028"},
-  {n:"Michael kilpatrick",r:"Senior Analyst",s:"Industrials",y:"2028"},
-  {n:"Auggie rivero",r:"Analyst",s:"Industrials",y:"2029"},
-  {n:"Brit dugan",r:"Analyst",s:"Industrials",y:"2027"},
-  {n:"Daniel campos anzaldua",r:"Analyst",s:"Industrials",y:"2028"}, 
-  {n:"Jack matthews",r:"Analyst",s:"Industrials",y:"2028"},
-  {n:"Sven nielsen",r:"Analyst",s:"Industrials",y:"2028"},
-  {n:"Michael keenan",r:"Analyst",s:"Industrials",y:"2029"},
-  {n:"Cam sanchez",r:"Analyst",s:"Financial",y:"2029"},
-]
+      {n:"Ryan Conniff",r:"Senior Analyst",s:"Consumer",y:"2028"},
+      {n:"Elise Dumpert",r:"Analyst",s:"Consumer",y:"2027"},
+      {n:"Colin Fischer",r:"Analyst",s:"Consumer",y:"2029"},
+      {n:"Noah Robbins",r:"Analyst",s:"Consumer",y:"2030"},
+      {n:"William Siegler",r:"Analyst",s:"Consumer",y:"2028"},
+      {n:"Kate Sniffen",r:"Analyst",s:"Consumer",y:"2029"},
+      {n:"Nick Holjak",r:"Senior Analyst",s:"TMT",y:"2027"},
+      {n:"Harrison Cevasco",r:"Analyst",s:"TMT",y:"2029"},
+      {n:"Thomas Patterson",r:"Analyst",s:"TMT",y:"2028"},
+      {n:"Darya Tchavdarova",r:"Analyst",s:"TMT",y:"2028"},
+      {n:"Nick Wilson",r:"Analyst",s:"TMT",y:"2030"},
+      {n:"Annabelle yip",r:"Analyst",s:"TMT",y:"2030"},
+      {n:"John Gardner",r:"Senior Analyst",s:"Energy",y:"2029"},
+      {n:"Ryan Branham",r:"Analyst",s:"Energy",y:"2029"},
+      {n:"Julia Judkins",r:"Analyst",s:"Energy",y:"2028"},
+      {n:"Jack Kwait",r:"Analyst",s:"Energy",y:"2029"},
+      {n:"Ace Poyah",r:"Analyst",s:"Energy",y:"2030"},
+      {n:"Anthony Watson",r:"PM Alternatives",s:"Derivatives",y:"2027"},
+      {n:"Sahil Agarwal",r:"Analyst",s:"Derivatives",y:"2028"},
+      {n:"Ryan Fronczak",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"James Lambert",r:"Analyst",s:"Derivatives",y:"208"},
+      {n:"Sophia McCoy",r:"Analyst",s:"Derivatives",y:"2028"},
+      {n:"Will McCoy",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"James Rubleske",r:"Analyst",s:"Derivatives",y:"2029"},
+      {n:"Josh Shannon",r:"Analyst",s:"Derivatives",y:"2027"},
+      {n:"Valentin di Stefano",r:"Senior Analyst",s:"Financial",y:"2028"},
+      {n:"Gray Barnett",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Rishi Gorjala",r:"Analyst",s:"Financial",y:"2030"},
+      {n:"Jack Krokondelas",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Cam Sanchez",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Cameron Fischer",r:"Senior Analyst",s:"Healthcare",y:"2027"},
+      {n:"Jackson Davis",r:"Analyst",s:"Healthcare",y:"2028"},
+      {n:"Hudson Garraux",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Shree Patadia",r:"Analyst",s:"Financial",y:"2030"},
+      {n:"Auggie Rivero",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Michael Kilpatrick",r:"Senior Analyst",s:"Industrials",y:"2028"},
+      {n:"Daniel Campos Anzaldua",r:"Analyst",s:"Financial",y:"2028"},
+      {n:"Brit Dugan",r:"Analyst",s:"Financial",y:"2027"},
+      {n:"Michael Keenan",r:"Analyst",s:"Financial",y:"2029"},
+      {n:"Jack Matthews",r:"Analyst",s:"Industrials",y:"2028"},
+      {n:"Sven Nielsen",r:"Analyst",s:"Industrials",y:"2028"},
+    ]
 
     function slugify(name: string) { return name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') }
     function initials(name: string) { return name.split(' ').map((n:string)=>n[0]).slice(0,2).join('') }
 
     function renderA(sec: string) {
-      const g = document.getElementById('agrid')
-      if (!g) return
-      const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
-      g.innerHTML = f.map(a => {
-        const slug = slugify(a.n)
-        const ini = initials(a.n)
-        return `<div class="ac">
-          <img class="ac-photo" src="https://www.garnetfund.org/headshots/${slug}.jpg" alt="${a.n}"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="ac-ph" style="display:none">${ini}</div>
-          <div class="an">${a.n}</div>
-          <div class="as">${a.s} · ${a.y}</div>
-          ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
-        </div>`
-      }).join('')
-    }
+  const g = document.getElementById('agrid')
+  if (!g) return
+  const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
+  g.innerHTML = f.map(a => {
+    const ini = initials(a.n)
+    return `<div class="ac">
+      <img class="ac-photo" src="https://www.garnetfund.org/headshots/${a.h}" alt="${a.n}"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ac-ph" style="display:none">${ini}</div>
+      <div class="an">${a.n}</div>
+      <div class="as">${a.s} · ${a.y}</div>
+      ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
+    </div>`
+  }).join('')
+}
     renderA('all')
 
     const stabs = document.getElementById('stabs')
