@@ -58,22 +58,26 @@ export default function Home() {
       {n:"Sven Nielsen",r:"Analyst",s:"Industrials",y:"2028"},
     ]
 
+    function slugify(name: string) { return name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') }
+    function initials(name: string) { return name.split(' ').map((n:string)=>n[0]).slice(0,2).join('') }
+
     function renderA(sec: string) {
-  const g = document.getElementById('agrid')
-  if (!g) return
-  const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
-  g.innerHTML = f.map(a => {
-    const ini = initials(a.n)
-    return `<div class="ac">
-      <img class="ac-photo" src="https://www.garnetfund.org/headshots/${a.h}" alt="${a.n}"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="ac-ph" style="display:none">${ini}</div>
-      <div class="an">${a.n}</div>
-      <div class="as">${a.s} · ${a.y}</div>
-      ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
-    </div>`
-  }).join('')
-}
+      const g = document.getElementById('agrid')
+      if (!g) return
+      const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
+      g.innerHTML = f.map(a => {
+        const slug = slugify(a.n)
+        const ini = initials(a.n)
+        return `<div class="ac">
+          <img class="ac-photo" src="https://www.garnetfund.org/headshots/${slug}.jpg" alt="${a.n}"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="ac-ph" style="display:none">${ini}</div>
+          <div class="an">${a.n}</div>
+          <div class="as">${a.s} · ${a.y}</div>
+          ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
+        </div>`
+      }).join('')
+    }
     renderA('all')
 
     const stabs = document.getElementById('stabs')
