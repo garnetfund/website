@@ -58,9 +58,6 @@ export default function Home() {
       {n:"Sven Nielsen",r:"Analyst",s:"Industrials",y:"2028"},
     ]
 
-    function slugify(name: string) { return name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') }
-    function initials(name: string) { return name.split(' ').map((n:string)=>n[0]).slice(0,2).join('') }
-
     function renderA(sec: string) {
   const g = document.getElementById('agrid')
   if (!g) return
