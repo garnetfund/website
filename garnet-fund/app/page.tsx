@@ -66,10 +66,9 @@ export default function Home() {
   if (!g) return
   const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
   g.innerHTML = f.map(a => {
-    const slug = slugify(a.n)
     const ini = initials(a.n)
     return `<div class="ac">
-      <img class="ac-photo" src="https://www.garnetfund.org/headshots/${slug}.jpg" alt="${a.n}"
+      <img class="ac-photo" src="https://www.garnetfund.org/headshots/${a.h}" alt="${a.n}"
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="ac-ph" style="display:none">${ini}</div>
       <div class="an">${a.n}</div>
