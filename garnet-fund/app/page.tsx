@@ -55,7 +55,7 @@ export default function Home() {
   {n:"Brit Dugan",h:"Brit-Dugan.jpg",r:"Analyst",s:"Industrials",y:"2027"},
   {n:"Michael Keenan",h:"Michael-Keenan.jpg",r:"Analyst",s:"Industrials",y:"2029"},
   {n:"Jack Matthews",h:"jack-matthews.jpg",r:"Analyst",s:"Industrials",y:"2028"},
-  {n:"Sven Nielsen",h:"Sven-Nielsen.jpg",r:"Analyst",s:"Industrials",y:"2028"},
+  {n:"Sven Nielsen",h:"sven-nielsen.jpg",r:"Analyst",s:"Industrials",y:"2028"},
 ];
 
     function slugify(name: string) { return name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') }
@@ -374,7 +374,7 @@ export default function Home() {
               {slug:'anthony-watson',ini:'AW',name:'Anthony Watson',role:'Alternatives Portfolio Manager',year:'2027'},
               {slug:'cooper-johnston',ini:'CJ',name:'Cooper Johnston',role:'Risk Manager',year:'2027'},
               {slug:'sophia-mccoy',ini:'SM',name:'Sophia McCoy',role:'Head of Operations',year:'2028'},
-              {slug:'Preston-Schlagheck',ini:'AG',name:'Preston Schlagheck',role:'Head of Technology',year:'2028'},
+              {slug:'preston-schlagheck',ini:'PS',name:'Preston Schlagheck',role:'Head of Technology',year:'2028'},
             ].map((m,i) => (
               <div key={i} className="mc">
                 <img src={`https://www.garnetfund.org/headshots/${m.slug}.jpg`} className="mphoto" alt={m.name} onError={(e)=>{(e.target as HTMLElement).style.display='none';(e.target as HTMLElement).nextElementSibling && ((e.target as HTMLElement).nextElementSibling as HTMLElement).style && ((e.target as HTMLElement).nextElementSibling as HTMLElement).style.setProperty('display','flex')}} />
