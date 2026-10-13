@@ -19,14 +19,14 @@ export default function Home() {
   {n:"Elise Dumpert",h:"elise-dumpert.jpg",r:"Analyst",s:"Consumer",y:"2027"},
   {n:"Colin Fischer",h:"colin-fischer.jpg",r:"Analyst",s:"Consumer",y:"2029"},
   {n:"Noah Robbins",h:"noah-robbins.jpg",r:"Analyst",s:"Consumer",y:"2030"},
-  {n:"William Siegler",h:"william-siegler.jpg",r:"Analyst",s:"Consumer",y:"2028"},
+  {n:"William Seigler",h:"william-seigler.jpg",r:"Analyst",s:"Consumer",y:"2028"},
   {n:"Kate Sniffen",h:"kate-sniffen.jpg",r:"Analyst",s:"Consumer",y:"2029"},
   {n:"Nick Holjak",h:"nick-holjak.jpg",r:"Senior Analyst",s:"TMT",y:"2027"},
   {n:"Harrison Cevasco",h:"harrison-cevasco.jpg",r:"Analyst",s:"TMT",y:"2029"},
   {n:"Thomas Patterson",h:"thomas-patterson.jpg",r:"Analyst",s:"TMT",y:"2028"},
   {n:"Darya Tchavdarova",h:"darya-tchavdarova.jpg",r:"Analyst",s:"TMT",y:"2028"},
   {n:"Nick Wilson",h:"nick-wilson.jpg",r:"Analyst",s:"TMT",y:"2030"},
-  {n:"Annabelle yip",h:"annabelle-yip.jpg",r:"Analyst",s:"TMT",y:"2030"},
+  {n:"Annabelle Yip",h:"annabelle-yip.jpg",r:"Analyst",s:"TMT",y:"2030"},
   {n:"John Gardner",h:"john-gardner.jpg",r:"Senior Analyst",s:"Energy",y:"2029"},
   {n:"Ryan Branham",h:"ryan-branham.jpg",r:"Analyst",s:"Energy",y:"2029"},
   {n:"Julia Judkins",h:"julia-judkins.jpg",r:"Analyst",s:"Energy",y:"2028"},
@@ -62,23 +62,21 @@ export default function Home() {
     function initials(name: string) { return name.split(' ').map((n:string)=>n[0]).slice(0,2).join('') }
 
     function renderA(sec: string) {
-      const g = document.getElementById('agrid')
-      if (!g) return
-      const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
-      g.innerHTML = f.map(a => {
-        const slug = slugify(a.n)
-        const ini = initials(a.n)
-        return `<div class="ac">
-          <img class="ac-photo" src="https://www.garnetfund.org/headshots/${slug}.jpg" alt="${a.n}"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-          <div class="ac-ph" style="display:none">${ini}</div>
-          <div class="an">${a.n}</div>
-          <div class="as">${a.s} · ${a.y}</div>
-          ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
-        </div>`
-      }).join('')
-    }
-    renderA('all')
+  const g = document.getElementById('agrid')
+  if (!g) return
+  const f = analysts.filter(a => sec === 'all' ? true : a.s === sec)
+  g.innerHTML = f.map(a => {
+    const ini = initials(a.n)
+    return `<div class="ac">
+      <img class="ac-photo" src="https://www.garnetfund.org/headshots/${a.h}" alt="${a.n}"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="ac-ph" style="display:none">${ini}</div>
+      <div class="an">${a.n}</div>
+      <div class="as">${a.s} · ${a.y}</div>
+      ${a.r==='Senior Analyst'?'<span class="ab">Sr. Analyst</span>':''}
+    </div>`
+  }).join('')
+}
 
     const stabs = document.getElementById('stabs')
     if (stabs) {
