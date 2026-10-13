@@ -45,7 +45,7 @@ export default function Home() {
   {n:"Rishi Gorjala",h:"Rishi-Gorjala.jpg",r:"Analyst",s:"Financial",y:"2030"},
   {n:"Jack Krokondelas",h:"jack-krokondelas.jpg",r:"Analyst",s:"Financial",y:"2029"},
   {n:"Cam Sanchez",h:"Cam-Sanchez.jpg",r:"Analyst",s:"Financial",y:"2029"},
-  {n:"Cameron Fischer",h:"cameron-fischer.jpg",r:"Senior Analyst",s:"Healthcare",y:"2027"},
+  {n:"Cameron Fischer",h:"Cameron-Fischer.jpg",r:"Senior Analyst",s:"Healthcare",y:"2027"},
   {n:"Jackson Davis",h:"jackson-davis.jpg",r:"Analyst",s:"Healthcare",y:"2028"},
   {n:"Hudson Garraux",h:"Hudson-Garraux.jpg",r:"Analyst",s:"Healthcare",y:"2029"},
   {n:"Shree Patadia",h:"Shree-Patadia.jpg",r:"Analyst",s:"Healthcare",y:"2030"},
