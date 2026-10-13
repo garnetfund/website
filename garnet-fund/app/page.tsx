@@ -20,7 +20,7 @@ export default function Home() {
   {n:"Colin Fischer",h:"colin-fischer.jpg",r:"Analyst",s:"Consumer",y:"2029"},
   {n:"Noah Robbins",h:"noah-robbins.jpg",r:"Analyst",s:"Consumer",y:"2030"},
   {n:"William Siegler",h:"william-siegler.jpg",r:"Analyst",s:"Consumer",y:"2028"},
-  {n:"Kate Sniffen",h:"kate-sniffen-temp.jpg",r:"Analyst",s:"Consumer",y:"2029"},
+  {n:"Kate Sniffen",h:"kate-sniffen.jpg",r:"Analyst",s:"Consumer",y:"2029"},
   {n:"Nick Holjak",h:"nick-holjak.jpg",r:"Senior Analyst",s:"TMT",y:"2027"},
   {n:"Harrison Cevasco",h:"harrison-cevasco.jpg",r:"Analyst",s:"TMT",y:"2029"},
   {n:"Thomas Patterson",h:"thomas-patterson.jpg",r:"Analyst",s:"TMT",y:"2028"},
