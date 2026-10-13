@@ -55,7 +55,7 @@ export default function Home() {
   {n:"Brit Dugan",h:"Brit-Dugan.jpg",r:"Analyst",s:"Industrials",y:"2027"},
   {n:"Michael Keenan",h:"Michael-Keenan.jpg",r:"Analyst",s:"Industrials",y:"2029"},
   {n:"Jack Matthews",h:"jack-matthews.jpg",r:"Analyst",s:"Industrials",y:"2028"},
-  {n:"Sven Nielsen",h:"sven-nielsen.jpg",r:"Analyst",s:"Industrials",y:"2028"},
+  {n:"Sven Nielsen",h:"Sven-Nielsen.jpg",r:"Analyst",s:"Industrials",y:"2028"},
 ];
 
     function slugify(name: string) { return name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') }
